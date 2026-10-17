@@ -1780,98 +1780,479 @@ img {
 }
 
 @media (max-width: 768px) {
+  /* Layout & Container Spacing */
+  .container {
+    padding: 0 1.15rem;
+  }
+
   .section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
+
+  /* Unified Titles & Headers on Mobile */
+  .section-header {
+    text-align: center;
+    margin-bottom: 2.25rem;
+    padding: 0 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .section-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .section-tag {
+    font-size: 0.78rem;
+    padding: 0.3rem 0.85rem;
+  }
+
+  /* Navigation Bar & Mobile Drawer */
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: 65px;
     left: 0;
     width: 100%;
     background: #ffffff;
     border-bottom: 1px solid var(--border-subtle);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.25rem 2rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1.1rem;
     transform: translateY(-150%);
     transition: transform var(--transition-normal);
     box-shadow: var(--shadow-lg);
+    z-index: 999;
   }
+
   .nav-links.open {
     transform: translateY(0);
   }
+
   .nav-actions {
     display: none;
   }
-  .hero-stats-row {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+
+  /* Announcement Ticker Bar */
+  .ticker-bar {
+    margin-top: 60px !important;
+    padding: 0.6rem 0;
   }
-  .career-features-list {
-    grid-template-columns: 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-bottom {
+
+  .ticker-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 0.5rem;
   }
-  /* Additional mobile tweaks */
-  /* Hero section adjustments */
+
+  /* Hero Section */
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    min-height: auto;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .hero {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    min-height: auto;
+
+  .hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .hero-card-img-wrap {
-    height: 220px;
+
+  .hero-pill {
+    margin-bottom: 1.2rem;
+    font-size: 0.8rem;
   }
+
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.75rem;
+  }
+
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
+
   .hero-buttons .btn {
     width: 100%;
+    justify-content: center;
     text-align: center;
+    padding: 0.85rem 1.25rem;
   }
-  /* Quick links grid */
+
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .hero-card-img-wrap {
+    height: 200px;
+  }
+
+  .hero-card-body {
+    padding: 1.25rem;
+  }
+
   .quick-links-grid {
     grid-template-columns: 1fr;
+    gap: 0.65rem;
   }
-  /* Career tabs */
+
+  /* Pillars & Institutional Section */
+  .institutional-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .pillar-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .manifesto-box {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1.25rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .manifesto-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .manifesto-content h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .manifesto-content p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .manifesto-content > div {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .manifesto-content .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .manifesto-image-wrap img {
+    height: 200px;
+  }
+
+  /* Careers Tabs & Showcases */
   .careers-tabs {
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 2rem;
   }
-  .career-panel {
-    padding: 1rem;
+
+  .career-tab-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1rem;
   }
-  /* Resources grid */
-  .resources-grid {
+
+  .career-card-showcase {
     grid-template-columns: 1fr;
   }
-  /* Projects grid */
+
+  .career-showcase-img-box {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .career-showcase-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .career-showcase-title {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .career-showcase-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .career-features-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .career-actions-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .career-actions-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Resource Hub & Search */
+  .search-filter-box {
+    padding: 1.15rem;
+    gap: 1rem;
+  }
+
+  .search-input-wrapper {
+    min-width: 100%;
+  }
+
+  .filter-pills {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .filter-pill-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .resource-card {
+    padding: 1.35rem 1.2rem;
+  }
+
+  /* ==========================================================================
+     TOOLS SECTION & CALCULATOR (MOBILE PERFECT FIT)
+     ========================================================================== */
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tool-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .tool-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tool-header-text h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .tool-header-text p {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  /* Calculator Inputs Row Stack */
+  .calc-inputs-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+  }
+
+  .calc-inputs-row .calc-input {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .calc-inputs-row .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .grades-list {
+    max-height: 220px;
+    margin-bottom: 1.25rem;
+  }
+
+  .grade-row-item {
+    padding: 0.65rem 0.85rem;
+  }
+
+  .grade-row-subject {
+    font-size: 0.88rem;
+    word-break: break-word;
+  }
+
+  /* Calculator Results: 1 Column or compact 3 on very small screens */
+  .calc-results-box {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+
+  .calc-result-stat {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .calc-result-stat:last-child {
+    border-bottom: none;
+  }
+
+  .calc-result-stat strong {
+    font-size: 1.6rem;
+  }
+
+  .calc-result-stat span {
+    font-size: 0.75rem;
+  }
+
+  /* Projects Grid */
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  /* Tools grid */
-  .tools-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+
+  .project-body {
+    padding: 1.35rem 1.25rem;
   }
-  /* Section paddings */
-  .section {
-    padding: 3rem 0;
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  /* FAQ Section */
+  .faq-question {
+    padding: 1.15rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.25rem;
+  }
+
+  .faq-item.active .faq-answer {
+    padding-bottom: 1.25rem;
+  }
+
+  /* Instagram Community Banner */
+  .instagram-banner {
+    grid-template-columns: 1fr;
+    padding: 1.75rem 1.25rem;
+    gap: 1.75rem;
+    text-align: center;
+  }
+
+  .ig-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ig-content h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .ig-content p {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .ig-content > div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ig-content .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ig-preview-box {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3.5rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-brand-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-brand-col .nav-brand {
+    justify-content: center;
+  }
+
+  .footer-brand-col p {
+    max-width: 100%;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
   }
 }
 
