@@ -475,11 +475,11 @@ img {
    ========================================================================== */
 
 .hero {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 4rem;
+  padding-top: 6.5rem;
   padding-bottom: 4rem;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
@@ -1849,22 +1849,9 @@ img {
     display: none;
   }
 
-  /* Announcement Ticker Bar */
-  .ticker-bar {
-    margin-top: 60px !important;
-    padding: 0.6rem 0;
-  }
-
-  .ticker-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
-  }
-
   /* Hero Section */
   .hero {
-    padding-top: 2rem;
+    padding-top: 5.25rem;
     padding-bottom: 2.5rem;
     min-height: auto;
   }
