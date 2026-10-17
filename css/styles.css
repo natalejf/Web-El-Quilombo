@@ -1821,4 +1821,57 @@ img {
     flex-direction: column;
     text-align: center;
   }
+  /* Additional mobile tweaks */
+  /* Hero section adjustments */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    min-height: auto;
+  }
+  .hero-card-img-wrap {
+    height: 220px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  /* Quick links grid */
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Career tabs */
+  .careers-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .career-panel {
+    padding: 1rem;
+  }
+  /* Resources grid */
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  /* Tools grid */
+  .tools-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  /* Section paddings */
+  .section {
+    padding: 3rem 0;
+  }
 }
+
